@@ -6,4 +6,6 @@ title: Guides
 
 ## Abenezer Endale
 
-Originally from Hawassa, in the South of Ethiopia, I grew up in a Rastafarian community. In school I loved learning English because it enabled me to interact with _ferengi_ (a friendly term, meaning foreigners). My journey took me to Addis Ababa to study at the university and I began to work as a tour guide for visitors to Ethiopia. Being a tour guide is my passion as it allows me to share the country I love while meeting and learning from amazing people from around the world!
+Originally from southern Ethiopia, I grew up facing many challenges that shaped my resilience and determination. Over time, my dreams grew into a deep passion for learning and exploration. That passion led me to Addis Ababa, where I pursued my university studies and began building the foundation of my career.
+
+Since 2019, I have been a licensed local guide in Ethiopia. Guiding is more than a job for me — it is a calling. I love sharing the rich history, diverse cultures, and natural beauty of my country while meeting incredible people from all around the world. Every tour is an opportunity to connect, learn, and create unforgettable memories together.
