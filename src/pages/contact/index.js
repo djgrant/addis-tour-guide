@@ -74,9 +74,9 @@ export default class ContactPage extends React.Component {
                   <strong>Email:</strong>
                   <table cellpadding={0} cellspacing={0} border={0}>
                     <tr>
-                      <td>abenezerendal</td>
-                      <td>e1884@gm</td>
-                      <td>ail.com</td>
+                      <td>addistourguid</td>
+                      <td>e@outloo</td>
+                      <td>k.com</td>
                     </tr>
                   </table>
                 </p>
