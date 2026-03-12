@@ -13,20 +13,24 @@ export default () => (
         <h2>Personal tour operator with a trusted independent guide</h2>
         <p>
           <h3>Every where is your home</h3>
-          Welcome to Addis Ababa,Ethiopia the thriving capital city and
-          historical center. We got place for international visiters to explore
-          and experience a great Ethiopia starting from the capital up to the 
-          indigenous historical and natural attraction sites.
-          We offer a selection of tours that can be tailored to fit in with your
-          travel ambitions. Our priority is to make your trip to Ethiopia as 
-          enjoyable as possible by offering you our local knowledge and helping 
-          you to navigate your way through Addis Ababa,Ethiopia.
-          Our drivers perform well in every extereme Ethiopia attraction sites.
-          In highest and lowest geographical landscapes, they are well attended
-          to concern about your safety and they are punctual always. 
+          Join us on this enlightening journey as we unravel the timeless
+          allure and historical significance of these ancient lands. Our 
+          passion is driven(payed) by the inner support of finding global
+          travel intelligence. So, welcome to my country. You will experience 
+          how human nature is gradually changing and who we are.
+          We specialize in organizing local tour across Ethiopia, ensuring
+          a safe, comfortable, and enjoyable journey. Our carefully designed 
+          tour highlight remarkable historical sites, diverse wildlife, and 
+          ecologically unique landscapes. Whether you are traveling on a
+          budget or seeking a premium experience, whether you're traveling
+          solo or with a group, and whether you're staying for a few days 
+          or longer, we can customize the perfect adventure for you.
+          No matter your interests, travel stayle, or level of adventure,
+          Addis Tour Guide is here to make your Ethiopian journey truly
+          memorable.
         </p>
         <h3>The traveller first</h3>
-        <p>
+        <p> 
            Great experience & amazing hospitality !
         </p>
         {/* <a href="/tours" className="button">
