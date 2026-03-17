@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from '@tanstack/react-router'
 import { site, guide, tours, stats } from '../data/content.js'
 import './Home.css'
 

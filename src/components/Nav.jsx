@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { Link } from '@tanstack/react-router'
 import { nav } from '../data/content.js'
 import './Nav.css'
 
@@ -43,12 +43,13 @@ export default function Nav() {
           <ul className="nav-links" role="list">
             {nav.map(item => (
               <li key={item.path}>
-                <NavLink
+                <Link
                   to={item.path}
-                  className={({ isActive }) => `nav-link${isActive ? ' nav-link-active' : ''}`}
+                  activeProps={{ className: 'nav-link nav-link-active' }}
+                  inactiveProps={{ className: 'nav-link' }}
                 >
                   {item.label}
-                </NavLink>
+                </Link>
               </li>
             ))}
             <li>
@@ -83,13 +84,14 @@ export default function Nav() {
           <ul role="list">
             {nav.map(item => (
               <li key={item.path}>
-                <NavLink
+                <Link
                   to={item.path}
-                  className={({ isActive }) => `mobile-nav-link${isActive ? ' active' : ''}`}
+                  activeProps={{ className: 'mobile-nav-link active' }}
+                  inactiveProps={{ className: 'mobile-nav-link' }}
                   onClick={closeMenu}
                 >
                   {item.label}
-                </NavLink>
+                </Link>
               </li>
             ))}
             <li>
