@@ -185,10 +185,7 @@ function ReviewsTeaser() {
               <span key={i} className="star">{s}</span>
             ))}
           </div>
-          <p className="reviews-quote">
-            "The best investment of our entire Ethiopia trip."
-          </p>
-          <p className="reviews-attribution">— Verified TripAdvisor reviewer</p>
+          <p className="reviews-attribution">Read real reviews on TripAdvisor →</p>
         </div>
       </div>
     </section>

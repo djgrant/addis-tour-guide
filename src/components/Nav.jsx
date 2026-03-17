@@ -29,14 +29,14 @@ export default function Nav() {
       <div className="container nav-inner">
         {/* Logo */}
         <Link to="/" className="nav-logo" aria-label="Addis Tour Guide — Home" onClick={closeMenu}>
-          <span className="logo-flag-bar" aria-hidden="true" />
-          <span className="logo-text">
-            <span className="logo-green">Addis</span>
-            <span className="logo-dot" aria-hidden="true"> · </span>
-            <span className="logo-gold">Tour</span>
-            <span className="logo-dot" aria-hidden="true"> · </span>
-            <span className="logo-red">Guide</span>
+          <span className="logo-text" aria-hidden="true">
+            <span className="logo-word logo-green"><span className="logo-initial">A</span>ddis</span>
+            {' '}
+            <span className="logo-word logo-gold"><span className="logo-initial">T</span>our</span>
+            {' '}
+            <span className="logo-word logo-red"><span className="logo-initial">G</span>uide</span>
           </span>
+          <span className="sr-only">Addis Tour Guide</span>
         </Link>
 
         {/* Desktop nav */}

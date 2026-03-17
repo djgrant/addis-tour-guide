@@ -61,6 +61,12 @@
   width: 28px;
   flex-shrink: 0;
   margin-top: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-method-icon--whatsapp {
+  color: #25D366;
 }
 
 .contact-method-label {

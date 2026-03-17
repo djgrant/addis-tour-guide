@@ -14,6 +14,7 @@ export const guide = {
   licencedSince: 2019,
   location: 'Addis Ababa, Ethiopia',
   phone: '+251909538319',
+  whatsappUrl: 'https://wa.me/251909538319',
   email: 'addistourguide@outlook.com',
   photo: '/img/56106028_373432636716187_6558496012535595008_n.jpg',
   bio: [
@@ -113,9 +114,7 @@ export const tours = [
 
 export const stats = [
   { value: '5+', label: 'Years guiding' },
-  { value: '500+', label: 'Happy travellers' },
   { value: '5★', label: 'TripAdvisor rating' },
-  { value: '10+', label: 'Tour experiences' },
 ]
 
 export const nav = [
