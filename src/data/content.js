@@ -116,7 +116,7 @@ export const stats = [
   { value: '5+', label: 'Years guiding' },
   { value: '4.9★', label: 'TripAdvisor rating' },
   { value: '47', label: 'Verified reviews' },
-  { value: '2', label: 'Languages spoken' },
+  { value: '5+', label: 'Tour experiences' },
 ]
 
 export const nav = [
