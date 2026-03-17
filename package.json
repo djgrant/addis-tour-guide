@@ -1,54 +1,20 @@
 {
   "name": "addis-tour-guide",
-  "description": "Addis Tour Guide website",
-  "dependencies": {
-    "@emotion/core": "^10.0.14",
-    "@emotion/styled": "^10.0.14",
-    "@styled-system/css": "^5.0.17",
-    "@styled-system/theme-get": "^5.0.16",
-    "emotion-theming": "^10.0.14",
-    "gatsby": "^2.1.34",
-    "gatsby-image": "^2.0.23",
-    "gatsby-plugin-netlify": "^2.0.6",
-    "gatsby-plugin-netlify-cms": "^4.0.0",
-    "gatsby-plugin-purgecss": "^4.0.0",
-    "gatsby-plugin-react-helmet": "^3.0.4",
-    "gatsby-plugin-sharp": "^2.0.15",
-    "gatsby-remark-copy-linked-files": "^2.0.7",
-    "gatsby-remark-images": "^3.0.1",
-    "gatsby-remark-relative-images": "^0.2.1",
-    "gatsby-source-filesystem": "^2.0.26",
-    "gatsby-transformer-remark": "^2.3.4",
-    "gatsby-transformer-sharp": "^2.1.9",
-    "lodash": "^4.17.15",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms-app": "^2.9.6",
-    "parcel-bundler": "^1.9.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0",
-    "sharp": "^0.32.6",
-    "styled-system": "^5.0.16",
-    "uuid": "^3.2.1"
-  },
+  "description": "Addis Tour Guide website - Experience the real Ethiopia",
+  "version": "1.0.0",
+  "type": "module",
   "scripts": {
-    "clean": "gatsby clean",
-    "start:app": "npm run develop",
-    "start:lambda": "netlify-lambda serve src/lambda",
-    "start": "run-p start:**",
-    "build:app": "npm run clean && gatsby build",
-    "build:lambda": "netlify-lambda build src/lambda",
-    "build": "run-p build:**",
-    "develop": "npm run clean && NODE_OPTIONS=--openssl-legacy-provider gatsby develop -p 5000 -H 0.0.0.0",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "vite --port 5000 --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --port 5000 --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
-    "http-proxy-middleware": "^0.19.1",
-    "netlify-lambda": "^1.4.3",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.15.3"
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.7"
   }
 }
