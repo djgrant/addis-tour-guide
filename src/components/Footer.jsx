@@ -20,11 +20,10 @@ export default function Footer() {
 
         <div className="footer-brand">
           <div className="footer-logo">
-            <span className="footer-logo-flag" aria-hidden="true" />
             <span className="logo-green">Addis</span>
-            <span className="logo-dot"> · </span>
+            <span className="logo-dot"> </span>
             <span className="logo-gold">Tour</span>
-            <span className="logo-dot"> · </span>
+            <span className="logo-dot"> </span>
             <span className="logo-red">Guide</span>
           </div>
           <p className="footer-tagline">{site.tagline}</p>
