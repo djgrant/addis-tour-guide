@@ -1,45 +1,48 @@
 # Addis Tour Guide
 
-A Gatsby.js static website for a tour guide business in Addis Ababa, Ethiopia.
+A modern, accessible website for Abenezer Endale's tour guide business in Addis Ababa, Ethiopia.
 
-## Project Overview
+## Tech Stack
 
-- **Framework:** Gatsby v2 (React-based static site generator)
-- **CMS:** Netlify CMS (for content management)
-- **Styling:** Emotion (CSS-in-JS) with Styled System
-- **Image Processing:** gatsby-plugin-sharp (with sharp v0.32.6 for Node 20 compatibility)
+- **Framework:** React 18 + Vite 6
+- **Routing:** React Router DOM v6
+- **Styling:** Pure CSS with CSS custom properties (no framework)
+- **Fonts:** Playfair Display (headings) + Inter (body) via Google Fonts
+
+## Design System
+
+- **Color palette:** Ethiopian flag-inspired — deep green (`#1B7A4E`), gold (`#C8960C`), red (`#B22222`) on warm cream (`#FAF7F2`)
+- **Typography:** Serif headings (`Playfair Display`) for elegance, sans-serif body (`Inter`) for readability
+- **Accessibility:** Skip link, ARIA labels throughout, focus-visible styles, semantic HTML, keyboard navigation
 
 ## Architecture
 
-- `src/pages/` - Page components
-- `src/templates/` - Gatsby template files
-- `src/components/` - React components (atoms/molecules/organisms)
-- `src/theme/` - Global styles and theme config
-- `static/` - Static assets (images, admin config)
-- `lambda/` / `src/lambda/` - Netlify Functions (serverless)
+- `src/data/content.js` — All site content in one place (single source of truth)
+- `src/pages/` — Page components (Home, Tours, Guide, Reviews, Contact, NotFound)
+- `src/components/` — Shared components (Nav, Footer) with co-located CSS
+- `static/` — Static assets (images, favicons) served at root by Vite's publicDir
 
-## Development Setup
+## Pages
 
-### Key Configuration
-- Runs on port **5000** with host **0.0.0.0** for Replit compatibility
-- Uses `NODE_OPTIONS=--openssl-legacy-provider` to fix OpenSSL issue with Node 20 + webpack 4
+| Route | Page | Description |
+|-------|------|-------------|
+| `/` | Home | Hero, stats, guide intro, tour preview, reviews teaser, CTA |
+| `/tours` | Tours | Full tour listings with detail modal and booking CTAs |
+| `/guide` | Guide | Abenezer's bio, credentials, values |
+| `/reviews` | Reviews | TripAdvisor widget + curated testimonials |
+| `/contact` | Contact | Contact info + form (opens mailto) |
 
-### Prerequisites & Notes
-- **Python 3** must be installed as a system dependency (required for node-gyp)
-- **sharp v0.32.6** is used (upgraded from v0.22.1 to support Node 20)
-- Nested sharp packages in `gatsby-plugin-sharp` and `gatsby-transformer-sharp` have been removed so they use the top-level v0.32.6
+## Running
 
-### Running
 ```bash
-npm run develop
+npm run develop   # Dev server at localhost:5000
+npm run build     # Production build → dist/
 ```
 
-## Deployment
+## Key Decisions
 
-- **Type:** Static site
-- **Build command:** `NODE_OPTIONS=--openssl-legacy-provider gatsby build`
-- **Public directory:** `public`
-
-## Dependencies
-
-All installed via `npm install --platform=linux --arch=x64 --legacy-peer-deps`
+- Content extracted to `src/data/content.js` for easy editing without touching JSX
+- Contact form opens native mailto (no backend required)
+- All images referenced from `static/img/` directory served at `/img/`
+- Mobile nav with animated hamburger and overlay
+- Tour detail modal for full tour information without page change

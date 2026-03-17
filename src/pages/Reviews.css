@@ -1,0 +1,187 @@
+.reviews-welcome {
+  background: var(--color-cream);
+}
+
+.reviews-welcome-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-9);
+  align-items: start;
+}
+
+.reviews-welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.reviews-eyebrow {
+  color: var(--color-ink-subtle);
+  margin-top: var(--space-4);
+}
+
+.reviews-welcome-body {
+  color: var(--color-ink-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* TripAdvisor card */
+.reviews-ta-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.reviews-ta-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-light);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+  padding: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.reviews-ta-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.stars-row {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  color: var(--color-gold);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.reviews-ta-rating-text {
+  font-size: 14px;
+  color: var(--color-ink-subtle);
+  font-weight: 500;
+}
+
+.ta-widget-wrap {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.reviews-ta-note {
+  font-size: 12px;
+  color: var(--color-ink-subtle);
+  line-height: 1.5;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* Highlights */
+.reviews-highlights-section {
+  background: var(--color-white);
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-7);
+}
+
+.review-card {
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--dur-med) var(--ease),
+              box-shadow var(--dur-med) var(--ease);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+.review-stars {
+  display: flex;
+  gap: 3px;
+  font-size: 1.1rem;
+  color: var(--color-gold);
+}
+
+.review-quote {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--color-ink);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.review-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.review-author {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-ink);
+}
+
+.review-origin {
+  font-size: 12px;
+  color: var(--color-ink-subtle);
+}
+
+.reviews-more-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* Book CTA */
+.reviews-book-cta {
+  background: var(--color-green-light);
+}
+
+.reviews-book-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-5);
+}
+
+.reviews-book-inner p {
+  color: var(--color-ink-muted);
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .reviews-welcome-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .review-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+}
