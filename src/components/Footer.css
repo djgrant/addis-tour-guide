@@ -12,11 +12,28 @@
 }
 
 .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-serif);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.01em;
   margin-bottom: var(--space-3);
+}
+
+.footer-logo-flag {
+  display: block;
+  width: 4px;
+  height: 28px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to bottom,
+    #5EC997 33.3%,
+    #E8BA4A 33.3% 66.6%,
+    #E87070 66.6%
+  );
+  flex-shrink: 0;
 }
 
 .footer-logo .logo-green { color: #5EC997; }
@@ -64,6 +81,14 @@
   align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-3);
+}
+
+.footer-whatsapp {
+  color: #4FCB7F;
+}
+
+.footer-whatsapp:hover {
+  color: #6EE8A0;
 }
 
 .footer-bottom {

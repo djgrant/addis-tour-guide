@@ -16,7 +16,7 @@ function Hero() {
       <div className="container hero-content">
         <div className="hero-eyebrow label">
           <span className="hero-dot green" aria-hidden="true" />
-          Licensed Local Guide · Addis Ababa, Ethiopia
+          Local Guide · Addis Ababa, Ethiopia
         </div>
         <h1 className="heading-xl hero-title">{site.tagline}</h1>
         <p className="hero-subtitle">
@@ -90,7 +90,7 @@ function IntroSection() {
           />
           <div className="intro-badge" aria-hidden="true">
             <span className="badge-year">Since 2019</span>
-            <span className="badge-label">Licensed guide</span>
+            <span className="badge-label">Local guide</span>
           </div>
         </div>
       </div>
@@ -156,12 +156,11 @@ function ReviewsTeaser() {
           <div className="flag-bar" aria-hidden="true" />
           <p className="label reviews-teaser-eyebrow">Travellers agree</p>
           <h2 className="heading-lg" id="reviews-teaser-heading">
-            Rated 5 stars<br />on TripAdvisor
+            Rated 4.9 / 5<br />on TripAdvisor
           </h2>
           <p className="reviews-teaser-body">
-            Hundreds of travellers from around the world have explored Addis
-            Ababa with Abenezer. Read their experiences and see why they keep
-            recommending him.
+            47 verified reviews from travellers around the world — read their
+            experiences and see why they keep recommending Abenezer.
           </p>
           <div className="reviews-teaser-actions">
             <a

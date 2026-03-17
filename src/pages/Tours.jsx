@@ -19,7 +19,7 @@ function PageHero() {
           Tour Experiences
         </h1>
         <p className="page-hero-desc">
-          Every tour is led personally by Abenezer — a licensed local guide
+          Every tour is led personally by Abenezer — a local guide
           who knows Addis Ababa inside and out.
         </p>
       </div>

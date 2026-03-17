@@ -48,21 +48,21 @@ function TripAdvisorWidget() {
 
 const highlights = [
   {
-    quote: "The best investment of our entire Ethiopia trip. Abenezer made everything come alive.",
-    author: "Sarah M.",
-    origin: "United Kingdom",
+    quote: "Abenezer organised an excellent one-day tour of Addis Ababa. He was highly responsive to my interests, tailoring the experience in ways that made the day both personal and memorable. I saw and learned things I never would have discovered on my own. He's friendly, engaging, and simply a pleasure to spend time with. I would wholeheartedly recommend him to any traveler looking to explore Addis Ababa.",
+    author: "Gareth W.",
+    date: "June 2025",
     rating: 5,
   },
   {
-    quote: "We felt like we were exploring with a friend, not a guide. Truly exceptional.",
-    author: "Thomas R.",
-    origin: "Germany",
+    quote: "He was accommodating to my schedule and planned a route for me to experience everything I wanted to see in my short time frame. He was extremely knowledgeable and personable, as well as an overall genuine good person. I learned a lot about the culture of Addis and the history of the rapidly developing city. I would recommend this to anyone who wants to have a rich experience.",
+    author: "Roam17281727715",
+    date: "August 2025",
     rating: 5,
   },
   {
-    quote: "I've travelled extensively in Africa. This was one of the most memorable days.",
-    author: "Amara K.",
-    origin: "United States",
+    quote: "I really enjoy the tour! I had a stopover of 17 hours so I decided to book a guide and I was so lucky to meet Abenezer! A good mix of walking around and relaxing, we had lunch in Merkato after visiting the University and drank the best coffee in town!! Next stopover I'll book a tour in the mountains! Really amazing guide!",
+    author: "Nicola S.",
+    date: "March 2025",
     rating: 5,
   },
 ]
@@ -84,7 +84,7 @@ export default function Reviews() {
             Reviews
           </h1>
           <p className="page-hero-desc">
-            Rated 5 stars on TripAdvisor by travellers from around the world.
+            Rated 4.9 / 5 on TripAdvisor across 47 verified reviews.
           </p>
         </div>
       </div>
@@ -121,12 +121,12 @@ export default function Reviews() {
           <div className="reviews-ta-col">
             <div className="reviews-ta-card">
               <div className="reviews-ta-header">
-                <div className="stars-row" aria-label="5 star rating">
+                <div className="stars-row" aria-label="4.9 star rating">
                   {'★★★★★'.split('').map((s, i) => (
                     <span key={i} className="star" aria-hidden="true">{s}</span>
                   ))}
                 </div>
-                <p className="reviews-ta-rating-text">5.0 / 5.0 on TripAdvisor</p>
+                <p className="reviews-ta-rating-text">4.9 / 5.0 · 47 reviews on TripAdvisor</p>
               </div>
               <TripAdvisorWidget />
               <p className="reviews-ta-note">
@@ -158,7 +158,7 @@ export default function Reviews() {
                   <p className="review-quote">"{r.quote}"</p>
                   <footer className="review-footer">
                     <cite className="review-author">{r.author}</cite>
-                    <span className="review-origin">{r.origin}</span>
+                    <span className="review-origin">{r.date} · via TripAdvisor</span>
                   </footer>
                 </blockquote>
               </li>
@@ -183,7 +183,7 @@ export default function Reviews() {
           <h2 className="heading-lg" id="reviews-book-heading">
             Ready to create your own<br />unforgettable experience?
           </h2>
-          <p>Join hundreds of satisfied travellers. Book your tour today.</p>
+          <p>Join 47 verified TripAdvisor travellers. Book your tour today.</p>
           <Link to="/contact" className="btn btn-primary">
             Book a Tour
           </Link>

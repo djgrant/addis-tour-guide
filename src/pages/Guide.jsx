@@ -20,7 +20,7 @@ export default function Guide() {
             {guide.name}
           </h1>
           <p className="page-hero-desc">
-            Licensed guide · Addis Ababa, Ethiopia · Since {guide.licencedSince}
+            Local Guide · Addis Ababa, Ethiopia · Since {guide.licencedSince}
           </p>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Guide() {
             <div className="guide-photo-wrap">
               <img
                 src={guide.photo}
-                alt="Abenezer Endale, licensed local guide in Addis Ababa, Ethiopia"
+                alt="Abenezer Endale, local guide in Addis Ababa, Ethiopia"
                 className="guide-photo"
                 width="480"
                 height="580"

@@ -19,10 +19,10 @@ export const guide = {
   photo: '/img/56106028_373432636716187_6558496012535595008_n.jpg',
   bio: [
     'Originally from southern Ethiopia, I grew up facing many challenges that shaped my resilience and determination. Over time, my dreams grew into a deep passion for learning and exploration. That passion led me to Addis Ababa, where I pursued my university studies and began building the foundation of my career.',
-    'Since 2019, I have been a licensed local guide in Ethiopia. Guiding is more than a job for me — it is a calling. I love sharing the rich history, diverse cultures, and natural beauty of my country while meeting incredible people from all around the world. Every tour is an opportunity to connect, learn, and create unforgettable memories together.',
+    'Since 2019, I have been guiding visitors through Ethiopia. Guiding is more than a job for me — it is a calling. I love sharing the rich history, diverse cultures, and natural beauty of my country while meeting incredible people from all around the world. Every tour is an opportunity to connect, learn, and create unforgettable memories together.',
   ],
   credentials: [
-    { label: 'Licensed guide since', value: '2019' },
+    { label: 'Guiding since', value: '2019' },
     { label: 'Location', value: 'Addis Ababa, Ethiopia' },
     { label: 'Languages', value: 'Amharic, English' },
     { label: 'Speciality', value: 'History, Culture & Nature' },
@@ -114,7 +114,9 @@ export const tours = [
 
 export const stats = [
   { value: '5+', label: 'Years guiding' },
-  { value: '5★', label: 'TripAdvisor rating' },
+  { value: '4.9★', label: 'TripAdvisor rating' },
+  { value: '47', label: 'Verified reviews' },
+  { value: '2', label: 'Languages spoken' },
 ]
 
 export const nav = [
